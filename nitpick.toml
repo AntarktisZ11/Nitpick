@@ -1,0 +1,9 @@
+[nitpick.meta]
+name = "Nitpick"
+url = "https://github.com/andreoliwa/nitpick"
+
+[[".pre-commit-config.yaml".repos]]
+repo = "https://github.com/andreoliwa/nitpick" # Might change to local
+
+[[".pre-commit-config.yaml".repos.hooks]]
+id = "nitpick check"
