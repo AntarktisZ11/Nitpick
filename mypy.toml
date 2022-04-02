@@ -1,0 +1,48 @@
+[nitpick.meta]
+name = "Mypy"
+url = "https://github.com/python/mypy"
+
+# https://mypy.readthedocs.io/en/latest/config_file.html
+["pyproject.toml".tool.mypy]
+
+# https://mypy.readthedocs.io/en/stable/running_mypy.html#follow-imports
+follow_imports = "normal"
+
+# Treat Optional per PEP 484
+strict_optional = true
+
+# Disallows defining functions without complete type annotation.
+# Strict setting
+disallow_untyped_defs = true
+
+# Anything imported from an unfollowed import is automatically given a type of ``Any``.
+# 1. Search for stubs
+# 2. Generate stubs, https://mypy.readthedocs.io/en/stable/stubgen.html#automatic-stub-generation-stubgen
+# 3. use ``ignore_missing_imports = True`` for the dependency in question.
+disallow_any_unimported = true
+
+# Type-checks the interior of functions without type annotations.
+check_untyped_defs = true
+
+# Ensure all execution paths are returning
+warn_no_return = true
+
+# Shows a warning when returning a value with type ``Any`` from a
+# function declared with a non- ``Any`` return type.
+warn_return_any = true
+
+# Lint-style cleanliness for typing
+warn_redundant_casts = true
+
+# Warns about unneeded ``# type: ignore`` comments.
+# " False positives when running on local machine... it works on pre-commit.ci ¯\_(ツ)_/¯ " - https://github.com/andreoliwa
+warn_unused_ignores = false
+show_error_codes = true
+
+
+[[".pre-commit-config.yaml".repos]]
+repo = "https://github.com/pre-commit/mirrors-mypy"
+
+[[".pre-commit-config.yaml".repos.hooks]]
+id = "mypy"
+args = ["--show-error-codes"]

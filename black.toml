@@ -1,0 +1,13 @@
+[nitpick.meta]
+name = "Black"
+url = "https://github.com/psf/black"
+
+["pyproject.toml".tool.black]
+line-length = 120
+
+[[".pre-commit-config.yaml".repos]]
+repo = "https://github.com/psf/black"
+
+[[".pre-commit-config.yaml".repos.hooks]]
+id = "black"
+args = ["--safe", "--quiet"]
