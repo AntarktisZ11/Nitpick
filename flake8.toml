@@ -16,6 +16,7 @@ exclude = ".tox,build"
 # without being asked.
 [[".pre-commit-config.yaml".repos]]
 repo = "https://github.com/PyCQA/flake8"
+rev = ""
 
 [[".pre-commit-config.yaml".repos.hooks]]
 id = "flake8"
