@@ -1,0 +1,6 @@
+
+[nitpick.meta]
+name = "Shell style compilation"
+
+[nitpick.styles]
+include = ["./bashate.toml", "./shellcheck.toml", "./shfmt.toml"]

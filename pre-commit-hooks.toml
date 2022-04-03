@@ -9,6 +9,7 @@ url = "https://github.com/pre-commit/pre-commit-hooks"
 
 [[".pre-commit-config.yaml".repos]]
 repo = "https://github.com/pre-commit/pre-commit-hooks"
+rev = ""                                                # run `pre-commit autoupdate`
 
 [[".pre-commit-config.yaml".repos.hooks]]
 id = "end-of-file-fixer"

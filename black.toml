@@ -7,6 +7,7 @@ line-length = 120
 
 [[".pre-commit-config.yaml".repos]]
 repo = "https://github.com/psf/black"
+rev = ""
 
 [[".pre-commit-config.yaml".repos.hooks]]
 id = "black"

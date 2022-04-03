@@ -25,6 +25,7 @@ import_heading_localfolder = "Local Folder"
 
 [[".pre-commit-config.yaml".repos]]
 repo = "https://github.com/PyCQA/isort"
+rev = ""
 
 [[".pre-commit-config.yaml".repos.hooks]]
 id = "isort"
