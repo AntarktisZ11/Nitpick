@@ -2,7 +2,8 @@
 name = "Default style for Antarktis"
 url = "https://github.com/AntarktisZ11/Nitpick"
 
-style = [
+[nitpick.styles]
+include = [
     'gh://AntarktisZ11/Nitpick/pre-commit-hooks.toml',
     'gh://AntarktisZ11/Nitpick/black.toml',
     'gh://AntarktisZ11/Nitpick/isort.toml',
