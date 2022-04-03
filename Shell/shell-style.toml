@@ -3,4 +3,8 @@
 name = "Shell style compilation"
 
 [nitpick.styles]
-include = ["./bashate.toml", "./shellcheck.toml", "./shfmt.toml"]
+include = [
+    "gh://AntarktisZ11/Nitpick/Shell/bashate.toml",
+    "gh://AntarktisZ11/Nitpick/Shell/shellcheck.toml",
+    "gh://AntarktisZ11/Nitpick/Shell/shfmt.toml",
+]
