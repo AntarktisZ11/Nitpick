@@ -1,5 +1,5 @@
 [nitpick.meta]
-name = "Preset for Python 3.7"
+name = "Default style for Antarktis"
 url = "https://github.com/AntarktisZ11/Nitpick"
 
 style = [
@@ -8,7 +8,6 @@ style = [
     'gh://AntarktisZ11/Nitpick/isort.toml',
     'gh://AntarktisZ11/Nitpick/mypy.toml',
     'gh://AntarktisZ11/Nitpick/file-structure.toml',
-    'py://nitpick/resources/python/37',
     'gh://AntarktisZ11/Nitpick/commitizen.toml',
     'gh://AntarktisZ11/Nitpick/Shell/shell-style.toml',
 ]
