@@ -4,6 +4,8 @@ url = "https://github.com/python/mypy"
 
 # https://mypy.readthedocs.io/en/latest/config_file.html
 ["pyproject.toml".tool.mypy]
+exclude = ['tests/(unit|integration)/test_*']
+python_version = "3.7"
 
 # https://mypy.readthedocs.io/en/stable/running_mypy.html#follow-imports
 follow_imports = "normal"
