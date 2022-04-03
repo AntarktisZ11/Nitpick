@@ -1,0 +1,10 @@
+[nitpick.meta]
+name = "Dead"
+url = "https://github.com/asottile/dead"
+
+[[".pre-commit-config.yaml".repos]]
+repo = "https://github.com/asottile/dead"
+rev = ""
+
+[[".pre-commit-config.yaml".repos.hooks]]
+id = "dead"
