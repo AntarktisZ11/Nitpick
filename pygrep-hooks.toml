@@ -1,0 +1,13 @@
+[nitpick.meta]
+name = "PyGrep-hooks"
+url = "https://github.com/pre-commit/pygrep-hooks"
+
+[[".pre-commit-config.yaml".repos]]
+repo = "https://github.com/pre-commit/pygrep-hooks"
+rev = ""
+
+[[".pre-commit-config.yaml".repos.hooks]]
+id = "python-check-blanket-noqa"
+
+[[".pre-commit-config.yaml".repos.hooks]]
+id = "python-check-blanket-type-ignore"

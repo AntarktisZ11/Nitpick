@@ -28,9 +28,3 @@ id = "check-yaml"
 
 [[".pre-commit-config.yaml".repos.hooks]]
 id = "check-added-large-files"
-
-[[".pre-commit-config.yaml".repos.hooks]]
-id = "python-check-blanket-noqa"
-
-[[".pre-commit-config.yaml".repos.hooks]]
-id = "python-check-blanket-type-ignore"
