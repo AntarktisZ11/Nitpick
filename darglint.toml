@@ -1,0 +1,15 @@
+[nitpick.meta]
+name = "Darglint, linter for python docstrings"
+url = "https://github.com/terrencepreilly/darglint"
+
+["setup.cfg".darglint]
+strictness = "short"
+docstring_style = "google"
+
+[[".pre-commit-config.yaml".repos]]
+repo = "https://github.com/terrencepreilly/darglint"
+rev = ""
+
+[[".pre-commit-config.yaml".repos.hooks]]
+id = "darglint"
+args = ["--strictness", "short", "--docstring_style", "google"]
