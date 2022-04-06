@@ -1,0 +1,30 @@
+[nitpick.meta]
+name = "Pytest & Coverage"
+url = "https://github.com/pytest-dev/pytest"
+# url = "https://github.com/nedbat/coveragepy"
+
+
+["pyproject.toml".tool.pytest.ini_options]
+testpaths = "tests"
+required_plugins = ["pytest-cov"]
+addopts = "--verbose --cov --cov-report html --strict-markers"
+
+
+["pyproject.toml".tool.coverage.run]
+branch = true
+source = ["src/backend"]
+plugins = ["coverage_conditional_plugin"]
+dynamic_context = "test_function"
+
+["pyproject.toml".tool.coverage.report]
+skip_covered = true # Skip files with 100% coverage.
+skip_empty = true
+show_missing = true # Show line numbers of statements in each module that weren't executed.
+fail-under = 70     # Exit with a status of 2 if the total coverage is less than number.
+
+["pyproject.toml".tool.coverage.html]
+show_contexts = true
+
+["pyproject.toml".tool.coverage.coverage_conditional_plugin.rules]
+linux = "sys_platform == 'linux'"
+win32 = "sys_platform == 'win32'" # pragma: win32
