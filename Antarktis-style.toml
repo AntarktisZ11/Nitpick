@@ -8,6 +8,8 @@ include = [
     'gh://AntarktisZ11/Nitpick/black.toml',
     'gh://AntarktisZ11/Nitpick/isort.toml',
     'gh://AntarktisZ11/Nitpick/mypy.toml',
+    "gh://AntarktisZ11/Nitpick/flake8",
+    "gh://AntarktisZ11/Nitpick/darglint",
     'gh://AntarktisZ11/Nitpick/file-structure.toml',
     'gh://AntarktisZ11/Nitpick/commitizen.toml',
     'gh://AntarktisZ11/Nitpick/Shell/shell-style.toml',
