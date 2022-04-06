@@ -7,8 +7,7 @@ url = "https://github.com/pytest-dev/pytest"
 ["pyproject.toml".tool.pytest.ini_options]
 testpaths = "tests"
 required_plugins = ["pytest-cov"]
-addopts = "--verbose --cov --cov-report html --strict-markers"
-
+addopts = "--verbose --strict-markers --cov --cov-report html"
 
 ["pyproject.toml".tool.coverage.run]
 branch = true
@@ -20,7 +19,7 @@ dynamic_context = "test_function"
 skip_covered = true # Skip files with 100% coverage.
 skip_empty = true
 show_missing = true # Show line numbers of statements in each module that weren't executed.
-fail-under = 70     # Exit with a status of 2 if the total coverage is less than number.
+fail_under = 70     # Exit with a status of 2 if the total coverage is less than number.
 
 ["pyproject.toml".tool.coverage.html]
 show_contexts = true
