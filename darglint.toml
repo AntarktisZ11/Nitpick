@@ -13,11 +13,3 @@ rev = ""
 
 [[".pre-commit-config.yaml".repos.hooks]]
 id = "darglint"
-args = [
-    "-z",
-    "short",
-    "-s",
-    "google",
-    "-m",
-    '"{path}:{line} -> {msg_id} {msg}"',
-]
